@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row justify-content-center">
         <h2>Friends</h2>
       <Card v-for="(friend, id) in friends" :key="id">
         <template #cardHeader>

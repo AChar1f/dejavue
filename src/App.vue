@@ -2,16 +2,20 @@
   <div class="container">
     <Friends/>
   </div>
+  <div class="container">
+    <Products />
+  </div>
 
 </template>
 
 <script>
 import Friends from './components/Friends.vue';
+import Products from './components/Products.vue'
 
 export default {
   name: 'App',
   components: {
-     Friends
+     Friends, Products,
   },
   
 }
