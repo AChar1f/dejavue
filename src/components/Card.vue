@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card mx-2 my-2">
         <div class="card-header">
             <slot name="cardHeader"></slot>
         </div>

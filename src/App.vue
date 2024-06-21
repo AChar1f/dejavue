@@ -1,25 +1,19 @@
 <template>
-  <div class="container"></div>
-  <div class="row">
-    <Card>
-      <template #cardHeader>
-
-      </template>
-      <template #cardBody>
-        
-      </template>
-    </Card>
+  <div class="container">
+    <Friends/>
   </div>
+
 </template>
 
 <script>
-import Card from '@/components/Card.vue'
+import Friends from './components/Friends.vue';
 
 export default {
   name: 'App',
   components: {
-    Card,
-  }
+     Friends
+  },
+  
 }
 </script>
 
