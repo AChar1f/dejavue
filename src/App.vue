@@ -1,14 +1,24 @@
 <template>
   <div class="container"></div>
+  <div class="row">
+    <Card>
+      <template #cardHeader>
+
+      </template>
+      <template #cardBody>
+        
+      </template>
+    </Card>
+  </div>
 </template>
 
 <script>
-
+import Card from '@/components/Card.vue'
 
 export default {
   name: 'App',
   components: {
-
+    Card,
   }
 }
 </script>
