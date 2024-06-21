@@ -1,7 +1,10 @@
 <template>
     <div class="row justify-content-center">
         <h2>Friends</h2>
-      <Card v-for="(friend, id) in friends" :key="id">
+      <Card v-for="(friend, id) in friends" :key="id" :class="{
+      male : friend.gender == 'male', 
+      female : friend.gender == 'female'
+    }">
         <template #cardHeader>
           <img class="img-fluid" :src="friend.profile" :alt="friend.firstName" loading="lazy">
         </template>
@@ -74,6 +77,13 @@ import Card from '@/components/Card.vue'
   
 
   <style scoped>
-
+.male {
+  border: 6px solid gold;
+  background-color:paleturquoise;
+}
+.female{
+  border:6px solid pink;
+  background-color:violet;
+}
   </style>
   
