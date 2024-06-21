@@ -1,5 +1,5 @@
 <template>
-    <div class="card mx-2 my-2">
+    <div class="card">
         <div class="card-header">
             <slot name="cardHeader"></slot>
         </div>
@@ -19,6 +19,7 @@
   <style scoped>
     .card {
         width: 18rem;
+        padding-top: 7px;
     }
   </style>
   
