@@ -1,22 +1,26 @@
 <template>
-    <div class="row justify-content-center">
-        <h2>Products</h2>
-      <Card v-for="(product, id) in products" :key="id">
-        <template #cardHeader>
-          <img class="img-fluid" :src="product.profile" :alt="product.productName" loading="lazy">
-        </template>
-        <template #cardBody>
-          <h5>{{ product.productName }}</h5>
-          <h6>{{ product.price }}</h6>
-          <p>{{ product.description }}</p>
-          <p>{{ product.status }}</p>
-        </template>
-      </Card>
+    <div class="container">
+        <div class="row pt-5">
+            <h2 class="display-2">Products</h2>
+        </div>
+        <div class="row justify-content-center gap-3">
+            <Card v-for="(product, id) in products" :key="id">
+            <template #cardHeader>
+            <img class="img-fluid" :src="product.profile" :alt="product.productName" loading="lazy">
+            </template>
+            <template #cardBody>
+            <h5>{{ product.productName }}</h5>
+            <h6>Price: R{{ product.price }}</h6>
+            <p>{{ product.description }}</p>
+            <p>{{ product.status }}</p>
+            </template>
+        </Card>
+        </div>        
     </div>
   </template>
   
   <script>
-    import Card from '@/components/Card.vue'
+    import Card from './Card.vue'
 
   export default {
     name: 'ProductsComp',
@@ -80,6 +84,8 @@
   
 
   <style scoped>
-
+    .card {
+        background-color: #DAA06D;
+    }
   </style>
   
